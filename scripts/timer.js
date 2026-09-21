@@ -1,5 +1,5 @@
 let state = 'IDLE'
-let remaining = 1_500;          
+let remaining = 1_500_000;          
 let endTime = 0;  
 
 /* START TIMER */
