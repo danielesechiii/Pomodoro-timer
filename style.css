@@ -8,8 +8,9 @@
 
 /* GLOBAL VARIABLES */
 
-::root {
+:root {
     --font: 'Times New Roman', Times, serif; 
+    --color: lightgrey;
 }
 
 /* BACKGROUND STYLE */
@@ -24,13 +25,13 @@ h1 {
     font-family: var(--font);
     font-weight: 600;
     font-size: 4rem;
-    color: lightgray;
+    color: var(--color);
 }
 
 /* BUTTONS */
 
 button {
-    background-color: lightgray;
+    background-color: var(--color);
     border: 3px solid black;
     border-radius: 50px;
     object-fit: contain;
@@ -41,14 +42,14 @@ button {
 
 button:hover {
     background-color: black;
-    color: lightgray;
+    color: var(--color);
 } 
 
 /* TIMER */
 
 #timer {
     font-size: 5rem;
-    color: lightgray;
+    color: var(--color);
 }
 
 /* LAYOUT */

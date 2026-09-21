@@ -1,11 +1,15 @@
 let state = 'IDLE'
-let remaining = 1_500_000;          
-let endTime = 0;                    
+let remaining = 1_500;          
+let endTime = 0;  
+
+/* START TIMER */
 
 function startTimer() {  
     state = 'RUNNING';
     endTime = Date.now() + remaining;
 };
+
+/* TICK */
 
 function tick() {
     if (state !== 'RUNNING') return null;
@@ -18,14 +22,18 @@ function tick() {
     }
         
     return { state, remaining };
-}
+};
 
-function reset() {
+/* RESET TIMER */
+
+function resetTimer() {
     state = 'IDLE'
     endTime = 0;
     remaining = 1_500_000;
     return;
 };
 
-export { startTimer, tick, reset };
+/* FUNCTIONS EXPORT */
+
+export { startTimer, tick, resetTimer };
 
