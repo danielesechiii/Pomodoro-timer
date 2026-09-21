@@ -5,6 +5,9 @@ let endTime = 0;
 /* START TIMER */
 
 function startTimer() {  
+    if (state == 'RUNNING') {
+        return;
+    }
     state = 'RUNNING';
     endTime = Date.now() + remaining;
 };
